@@ -19,6 +19,7 @@
     animation-name: slide;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
+    overflow: hidden;
     h1 {
       text-align: center;
       color: styles.$secondary-color;
