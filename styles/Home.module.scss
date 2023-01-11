@@ -1,0 +1,18 @@
+.main{
+    color: #F3EFE0;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin-bottom: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    h2{
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+}
