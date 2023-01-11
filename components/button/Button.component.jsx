@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Button.styles.module.scss';
+import styles from './button.styles.module.scss';
 
 const stylesForButton = {
   classic: 'classic',

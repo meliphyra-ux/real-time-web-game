@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import Button from '../button/Button.component';
 import { useRouter } from 'next/navigation';
+
+import Button from '../button/Button.component';
+import Input from '../input/Input.component';
 
 import styles from './authentication-form.styles.module.scss'
 
@@ -34,10 +36,8 @@ const AuthenticationForm = ({ operation, text, redirect }) => {
     <form onSubmit={handleSubmit} className={styles.authenticationFormContainer}>
       <h2>{text} with email</h2>
       {error && <h3>{error.slice(error.indexOf(':') + 1)}</h3>}
-      <label htmlFor="email">Email</label>
-      <input name="email" type="email" required onChange={handleFormValues}/>
-      <label htmlFor="password">Password</label>
-      <input name="password" type="password" required onChange={handleFormValues}/>
+      <Input name="email" type="email" value={email} required onChange={handleFormValues}/>
+      <Input name="password" type="password" value={password} required onChange={handleFormValues} />
       <Button>{text}</Button>
     </form>
   );

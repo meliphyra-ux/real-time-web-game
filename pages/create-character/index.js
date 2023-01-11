@@ -1,8 +1,12 @@
-import React from 'react'
 
 const CreateCharacter = () => {
   return (
-    <div>CreateCharacter</div>
+    <div>
+        <h1>Create your character</h1>
+        <form>
+            
+        </form>
+    </div>
   )
 }
 
