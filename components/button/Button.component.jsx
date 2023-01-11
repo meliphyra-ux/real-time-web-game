@@ -1,4 +1,4 @@
-import styles from './button.styles.module.scss';
+import styles from './Button.styles.module.scss';
 
 const stylesForButton = {
   classic: 'classic',
